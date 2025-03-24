@@ -1,0 +1,410 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #696984;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* NavHeader */
+
+.navHeader {
+  background-color: #f76228;
+  color: white !important;
+}
+
+/* Navbar */
+
+.navLoginBtn {
+  color: black;
+  background-color: #efebeb;
+}
+
+.navLoginBtn:hover {
+  color: white !important;
+  background-color: #f76228 !important;
+}
+
+.nav-link.active {
+  font-weight: 400 !important;
+  color: black !important;
+}
+
+.navContactBtn {
+  color: white;
+  background-color: #f76228;
+  border: none;
+}
+
+.nav-link.active {
+  font-weight: 500;
+  color: #007bff; /* Bootstrap primary color */
+  /* text-decoration: underline; */
+}
+
+/* .loginForm{
+    margin-top: 30px;
+} */
+
+.loginAccountHeading {
+  margin-top: -10px;
+}
+
+.forgotPassword {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.loginBtn {
+  background-color: #f76228;
+  color: white;
+  font-weight: 600;
+}
+
+.btn:hover {
+  color: white;
+  font-weight: 400;
+  background-color: #f76228;
+  border-color: #f76228;
+}
+
+.signUpBtn {
+  color: Black;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.loginFormWomen {
+  width: 300px;
+  height: auto;
+  padding: 40px 0;
+}
+
+/* Home component */
+
+/* HomeHead */
+
+.home-head-wrapper {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 70vh;
+  margin-top: -20px;
+  position: relative;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.home-head-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.home-head-wrapper .container {
+  position: relative;
+  z-index: 2;
+  color: black;
+}
+
+.home_center {
+  background-color: #622162;
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.languageLab_ {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .home-head-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home_center {
+    padding: 1.5rem;
+  }
+
+  .languageLab_ {
+    margin-top: 2rem;
+  }
+
+  .home-head-wrapper img {
+    width: 100%;
+  }
+}
+
+.certification {
+  position: relative;
+  display: inline-block;
+  width: auto;
+}
+
+.overlay-img1 {
+  position: relative; /* Base image */
+  z-index: 1;
+}
+
+.overlay-img2 {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  z-index: 2;
+  transform: scale(0.9);
+}
+
+/* HomeBottom */
+
+.quizzesSpan {
+  color: #f76228;
+}
+
+.homBottomImg {
+  background-color: #f7f6f6;
+}
+
+/* About Component */
+
+.aboutTextSpan {
+  color: #f76228;
+}
+
+/* AboutHead */
+
+.aboutUsSection {
+  position: relative;
+  background-image: url("src/assets/images/AboutUsHead.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 30px 0;
+}
+
+.aboutUsHeadSection {
+  padding: 0 70px;
+}
+
+.aboutHeadSecondDiv {
+  background-color: white;
+}
+
+/* aboutCenter */
+
+.aboutCenter {
+  background-color: #f9f7f7;
+}
+
+.whatWeOfferOuter {
+  position: relative;
+  width: 30%; /* Make the outer image responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.whatWeOfferInner {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 52%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust for exact centering */
+  width: 17%; /* Adjust size relative to the outer image */
+  height: auto; /* Maintain aspect ratio */
+  z-index: 1; /* Ensure it appears above the outer image */
+}
+
+/* AboutBottom */
+
+.alert_bg {
+  padding: 20px;
+  /* border-radius: 8px; */
+  box-shadow: 1px 1px 2px 2px rgba(0.1, 0.1, 0.1, 0.1);
+  background-color: #fff;
+  margin: 10px 0;
+}
+
+.TextColor {
+  color: black;
+}
+
+.aboutBottomheadings {
+  background-color: #f6f8fb;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.arrow {
+  color: #9299a1;
+}
+
+/* contact */
+
+.custom-input:focus {
+  box-shadow: none !important;
+  outline: none !important;
+  border-color: black;
+}
+
+.custom-input::placeholder {
+  color: black;
+  opacity: 1;
+}
+
+/* contactBottom */
+
+.contactBottom {
+  background-color: #722372;
+  color: white;
+  padding: 80px;
+  margin: 100px 0;
+}
+
+.contactIcon {
+  width: 50px;
+}
+
+/* AllCourses */
+
+.allcoursesHead {
+  background-color: #4a1778;
+  color: white;
+}
+
+.exploreCourse {
+  padding: 40px 20px;
+  position: relative;
+}
+
+.allCourseMan {
+  max-width: 50%;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+  z-index: 1;
+}
+
+.form_outline {
+  box-shadow: none !important;
+}
+
+.boxForm {
+  border-radius: 8px;
+  z-index: 2;
+}
+
+.langugeLabDiv {
+  margin: 70px 0;
+}
+
+@media (max-width: 991px) {
+  .allCourseMan {
+    max-width: 40%;
+    top: 60%;
+    right: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .allCourseMan {
+    max-width: 100%;
+    position: relative;
+    top: auto;
+    right: auto;
+    transform: none;
+    margin-top: 20px;
+  }
+}
+
+/* All coursesBottom */
+
+.box {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 5px 5px 16px 16px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  margin: 10px 0;
+}
+
+.image-container img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Language Lab */
+
+.aboutLanguageLab {
+  background-color: #fff6ea;
+}
+
+.langaugelab {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fff;
+  margin: 10px 0;
+}
+
+.card {
+  position: relative;
+}
+
+.nb {
+  bottom: -20px;
+  /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  z-index: 10;
+}
+
+/* Practical */
+
+.box_ {
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  height: 200px;
+}
+
+/* Footer */
+
+.footermsg {
+  width: 100%;
+  margin-top: auto;
+}
+
+.footer {
+  padding: 40px;
+  background-color: #fff6ea;
+}
+
+.footerCopyright {
+  background-color: #fff6ea;
+}
+
+.footerNavbar {
+  cursor: pointer;
+}
+
+.footerNavbar .footerEmail {
+  word-wrap: break-word;
+  white-space: normal;
+  font-size: 1rem;
+}
