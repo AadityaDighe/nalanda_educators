@@ -1,2 +1,2 @@
 # nalanda_educators
-Created a Eucation Website Project.
+Created a Education Website Project.
